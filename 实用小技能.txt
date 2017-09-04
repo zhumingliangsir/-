@@ -1,0 +1,59 @@
+垂直居中：
+.container{
+            width: 50%;
+            height: 50%;
+            background-color: #f00;
+            margin: auto;
+            position:absolute;
+            top:0%;
+            left:0%;
+            right:0%;
+            bottom: 0%;
+}
+
+
+span	{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+}
+
+浏览器变编辑器：
+data:textl/htm,<html contenteditable>
+document.body.contenteditable=true;
+
+浏览器地址输入：
+	data:textl/htm,<h1>这是在浏览器生成标签<h1>
+
+页面文字变模糊效果
+*{
+            color:transparent;
+            text-shadow: #111 0 0 5px;
+        }
+
+
+
+@media screen and (min-width:1200px){
+	.login-wrap .row{
+		
+	}
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+	.login-wrap .row{
+		margin-right:-55%;
+	}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+	.login-wrap .row{
+		margin-right:-65%;
+	}
+}
+@media screen and (max-width:767px){
+	.form-group{
+	}
+	.login-wrap .row{
+		display:block;
+		align:center;
+	}
+}
